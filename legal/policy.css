@@ -1,0 +1,57 @@
+.policy {
+  height: 95%;
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+  padding: 2% 2% 4% 2%;
+  color: var(--text-primary);
+}
+.policy > * {
+  margin-bottom: 4%;
+  line-height: 1.4em;
+}
+.policy a {
+  color: var(--btn-primary);
+  text-decoration: none;
+}
+
+.policy a:hover {
+  text-decoration: underline;
+}
+
+.policy h2 {
+  margin-left: 2%;
+}
+
+.policy h3 {
+  margin-left: 4%;
+}
+
+.policy ul {
+  padding-left: 3%;
+}
+.policy p {
+  margin-left: 2%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .policy {
+    width: 90%;
+    margin: 0 0 6% 0;
+    padding: 3%;
+  }
+  .policy > * {
+    line-height: 1.6em;
+  }
+  .policy h2, .policy h3, .policy p {
+    margin: 2%;
+  }
+  .policy li {
+    margin-left: 6%;
+  }
+  .policy h3 {
+    margin-left: 4%;
+  }
+}

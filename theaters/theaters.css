@@ -1,0 +1,196 @@
+.videoContainer,
+.commentContainer {
+  height: 95%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  overflow: auto;
+}
+.videoContainer iframe {
+  width: 100%;
+  height: 80%;
+  border-radius: 14px;
+  margin-bottom: 2%;
+}
+.videoContainer .name {
+  width: 70%;
+  font-size: 1.8em;
+  color: var(--text-primary);
+  margin-bottom: 2%;
+}
+.videoContainer .data {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.videoContainer .data .author {
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  color: var(--text-primary);
+}
+.videoContainer .data .author .name {
+  font-size: 1.3em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.videoContainer .data .author .name img {
+  max-height: 100%;
+  max-width: 35px;
+  height: auto;
+  width: auto;
+  border-radius: 14px;
+}
+.videoContainer .data .author .category {
+  font-size: 1.2em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 1%;
+}
+.videoContainer .data .buttons {
+  width: 10%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.videoContainer .data .buttons .btn {
+  padding: 4%;
+}
+.videoContainer .data .material-symbols-rounded {
+  pointer-events: all;
+}
+
+.commentContainer {
+  width: 25%;
+  padding: 1%;
+  gap: 10px;
+  justify-content: space-between;
+}
+.commentContainer .commentLogs {
+  height: 85%;
+  width: 100%;
+  overflow: auto;
+}
+
+.commentContainer .commentLogs .comment {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.commentContainer .commentLogs .comment .data {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.commentContainer .commentLogs .comment .data .name {
+  font-size: 1em;
+  font-weight: bolder;
+  color: var(--text-primary);
+}
+.commentContainer .commentLogs .comment .data .date {
+  font-size: 1em;
+  font-weight: bolder;
+  color: var(--dim-text-color);
+}
+
+.commentContainer .commentLogs .comment .content {
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  color: var(--text-primary);
+}
+
+.commentContainer .input {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
+.commentContainer .input > * {
+  width: 100%;
+}
+.commentContainer .input textarea {
+  resize: none;
+  height: 120px;
+}
+.commentContainer .input .btn {
+  padding: 1%;
+  height: 60px;
+}
+.commentContainer .input .btn .material-symbols-rounded {
+  font-size: 1.8em;
+}
+
+@media screen and (max-width: 768px) {
+  .videoContainer,
+  .commentContainer {
+    min-height: 90vh;
+    width: 90%;
+    padding: 3%;
+    margin-bottom: 6%;
+  }
+  .videoContainer iframe {
+    min-height: 70vh;
+  }
+  .videoContainer .name {
+    width: 90%;
+  }
+  .videoContainer .data {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .videoContainer .data .author {
+    width: 95%;
+  }
+  .videoContainer .data .author .name {
+    gap: 8px;
+  }
+  .videoContainer .data .author .category {
+    font-size: 1.2em;
+    gap: 3px;
+  }
+  .videoContainer .data .buttons {
+    margin-top: 6%;
+    width: 100%;
+  }
+
+  .commentContainer {
+    padding: 3%;
+  }
+  .commentContainer .commentLogs {
+    max-height: 70vh;
+  }
+  .commentContainer .commentLogs .comment {
+    margin-bottom: 6%;
+  }
+  .commentContainer .commentLogs .comment .content {
+    font-size: 1.1em;
+  }
+
+  .commentContainer .input textarea {
+    height: 230px;
+  }
+  .commentContainer .input .btn {
+    padding: 1%;
+    height: 45px;
+  }
+}

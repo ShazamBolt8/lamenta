@@ -1,0 +1,121 @@
+.aim,
+.rules,
+.writing {
+  width: 30%;
+  height: 95%;
+  display: flex;
+  flex-flow: column;
+  color: var(--text-primary);
+  padding: 1%;
+  overflow: auto;
+}
+.aim > *,
+.rules > *,
+.writing * {
+  margin-bottom: 4%;
+}
+.aim img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 1.5em;
+  gap: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+p,
+li {
+  line-height: 1.4em;
+  font-size: 1.1em;
+}
+ol {
+  margin-left: 3%;
+}
+li {
+  margin-bottom: 3%;
+}
+.rules {
+  padding: 2%;
+  width: 25%;
+}
+.big {
+  font-size: 1.8em;
+  gap: 10px;
+}
+.big .material-symbols-rounded {
+  font-size: 1.2em;
+}
+.writing {
+  width: 25%;
+}
+.customH1 {
+  font-size: 1.6em;
+}
+.customH2 {
+  font-size: 1.4em;
+}
+.customH3 {
+  font-size: 1.2em;
+}
+.item {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin-bottom: 10%;
+}
+.aim a,
+.rules a,
+.writing a {
+  color: var(--btn-primary);
+  text-decoration: none;
+}
+.aim a:hover,
+.rules a:hover,
+.writing a:hover {
+  text-decoration: underline;
+}
+pre code {
+  display: block;
+  padding: 4%;
+  color: var(--text-primary);
+  border-radius: 14px;
+  background: linear-gradient(to bottom right, #1c1f23, #25292d);
+  box-shadow: inset 0px 3px 30px 1px #0e0f10, inset 0px -3px 30px 1px #24272b;
+  margin: 3% auto;
+  line-height: 1.8em;
+  overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .aim,
+  .rules,
+  .writing {
+    width: 90%;
+    padding: 4%;
+    margin-bottom: 6%;
+  }
+  .aim > *,
+  .rules > *,
+  .writing * {
+    margin-bottom: 6%;
+  }
+  h1 {
+    gap: 10px;
+  }
+  p,
+  li {
+    line-height: 1.4em;
+    font-size: 1.1em;
+  }
+  ol,
+  ul {
+    margin-left: 6%;
+  }
+  li {
+    margin-bottom: 3%;
+  }
+}

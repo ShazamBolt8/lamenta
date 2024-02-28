@@ -1,0 +1,37 @@
+DirectoryIndex index.php index.html index.htm index2.html
+
+#FORCE REDIRECT
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteEngine On
+
+RewriteRule ^login /author/login [QSA]
+RewriteRule ^logout /helpers/logout.php [QSA]
+
+RewriteRule ^random /components/randomPage.php [QSA]
+
+RewriteRule ^profile /author [QSA]
+RewriteRule ^new/author /author/add/ [QSA]
+
+RewriteRule ^new/article /writing/?method=create&type=article [QSA]
+RewriteRule ^edit/article/([0-9]+)/.* /writing/?method=edit&id=$1&type=article [L,QSA]
+
+RewriteRule ^new/theater /writing/?method=create&type=theater [QSA]
+RewriteRule ^edit/theater/([0-9]+)/.* /writing/?method=edit&id=$1&type=theater [L,QSA]
+
+RewriteRule ^articles/([0-9]+)/.* /articles/?id=$1 [QSA]
+RewriteRule ^theaters/([0-9]+)/.* /theaters/?id=$1 [QSA]
+
+RewriteRule ^about/ /information/ [QSA]
+RewriteRule ^policy /legal/policy.php [QSA]
+RewriteRule ^exception/([0-9]+) /exception/?error=$1 [QSA]
+
+ErrorDocument 400 /exception/400
+ErrorDocument 401 /exception/401
+ErrorDocument 403 /exception/403
+ErrorDocument 404 /exception/404
+ErrorDocument 500 /exception/500

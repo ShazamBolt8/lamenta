@@ -1,0 +1,349 @@
+.article,
+.metaData {
+  height: 95%;
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+  align-items: center;
+}
+.article .info {
+  width: 95%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+  margin-bottom: 4%;
+  padding: 2% 2% 4% 2%;
+}
+
+.article .info .heading {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.article .info .heading .name {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  gap: 3px;
+}
+.article .info .heading .name .title {
+  color: var(--text-primary);
+  width: 100%;
+  font-size: 1.7em;
+}
+.article .info .heading .name .category {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.article .info .heading .name .category .head1 {
+  font-size: 1.3em;
+}
+
+.article .info .heading .id {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 1% 3%;
+  color: var(--dim-text-color);
+}
+
+.article .info .cover {
+  height: auto;
+  width: auto;
+  max-height: 75%;
+  max-width: 80%;
+  border-radius: 14px;
+  box-shadow: 2px 6px 15px 2px var(--box-shadow-color);
+}
+
+.article .content {
+  height: auto;
+  width: 95%;
+  flex-grow: 4;
+  margin-bottom: 4%;
+  padding: 3%;
+  color: var(--text-primary);
+  word-break: normal;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.article .content > * {
+  margin-bottom: 3%;
+}
+
+.article .content p {
+  width: 100%;
+  overflow: auto;
+  line-height: 1.5em;
+}
+.article .content p > img {
+  margin: 3% auto;
+}
+.article .content img {
+  height: auto;
+  width: auto;
+  border-radius: 14px;
+  max-height: 65%;
+  max-width: 55%;
+  display: block;
+  margin: 0 auto;
+}
+
+.article .content a {
+  color: var(--btn-primary);
+  text-decoration: none;
+}
+.article .content a:hover {
+  text-decoration: underline;
+}
+
+.article .content ul,
+.article .content ol {
+  margin-left: 6%;
+}
+
+.article .content iframe {
+  margin: 3% auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  border: none;
+  align-self: center;
+  border-radius: 14px;
+}
+
+.article .content blockquote {
+  width: 70%;
+  margin: 3% auto;
+  padding: 3%;
+  color: var(--dim-text-color);
+  border-left: 3px solid var(--dim-text-color);
+}
+
+.article .content table {
+  margin: 3% auto;
+  width: 70%;
+  border-radius: 14px;
+  padding: 2%;
+}
+.article .content table td,
+.article .content table th {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid var(--btn-primary);
+}
+
+.article .content pre {
+  max-width: 80%;
+  width: auto;
+  padding: 4%;
+  color: var(--text-primary);
+  border-radius: 14px;
+  background: linear-gradient(to bottom right, #1c1f23, #25292d);
+  box-shadow: inset 0px 3px 30px 1px #0e0f10, inset 0px -3px 30px 1px #24272b;
+  margin: 3% auto;
+  line-height: 1.8em;
+  overflow: auto;
+}
+
+.article .content code {
+  background: #23262a;
+  padding: 2px 12px;
+  border-radius: 14px;
+  font-family: monospace;
+}
+
+.article .content pre code {
+  background: transparent;
+  padding: unset;
+  margin: unset;
+  font-family: unset;
+}
+
+.metaData {
+  width: 30%;
+}
+.metaData .author,
+.metaData .meta {
+  width: 90%;
+  max-height: 10%;
+  display: flex;
+  padding: 2%;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4%;
+}
+.metaData .author img {
+  max-height: 80%;
+  width: auto;
+  max-width: 40%;
+  border-radius: 14px;
+}
+.metaData .author .name {
+  color: var(--text-primary);
+  font-size: 1.4em;
+  height: auto;
+}
+.metaData .meta {
+  padding: 4% 3%;
+  color: var(--text-primary);
+}
+.metaData .meta .icon {
+  font-size: 1.8em;
+}
+.metaData .meta .value {
+  font-size: 1.4em;
+  text-decoration: none;
+  word-break: break-all;
+  white-space: break-spaces;
+  word-wrap: break-word;
+  font-size: 1.2em;
+}
+
+.metaData .meta .value a {
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.metaData .meta .value a:hover {
+  text-decoration: underline;
+}
+
+.metaData .btn {
+  margin-bottom: 4%;
+  width: 90%;
+  font-size: 1.5em;
+}
+
+.metaData .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.metaData .copyright {
+  max-height: 40vh;
+}
+@media screen and (max-width: 768px) {
+  .article,
+  .metaData {
+    height: 95%;
+    width: 100%;
+  }
+  .article .info {
+    width: 90%;
+    height: 60%;
+    margin-bottom: 6%;
+    padding: 3% 3% 6% 3%;
+  }
+
+  .article .info .heading {
+    margin-bottom: 4%;
+  }
+  .article .info .heading .name {
+    width: 70%;
+  }
+  .article .info .heading .name .title {
+    font-size: 1.5em;
+  }
+  .article .info .heading .name .category .head1 {
+    font-size: 1.3em;
+  }
+  .article .info .heading .id {
+    width: 25%;
+    font-size: 1.8em;
+    padding: 3%;
+  }
+
+  .article .info .cover {
+    max-width: 90%;
+  }
+
+  .article .content {
+    width: 90%;
+    margin-bottom: 6%;
+    padding: 3% 5%;
+  }
+
+  .article .content h1 {
+    font-size: 1.7em;
+  }
+
+  .article .content h2 {
+    font-size: 1.5em;
+  }
+
+  .article .content h3 {
+    font-size: 1.3em;
+  }
+
+  .article .content > * {
+    margin-bottom: 4%;
+  }
+
+  .article .content p {
+    line-height: 1.5em;
+  }
+
+  .article .content img {
+    max-height: 85%;
+    max-width: 90%;
+  }
+
+  .article .content ul,
+  .article .content ol {
+    margin-left: 12%;
+  }
+
+  .article .content blockquote {
+    width: 90%;
+    margin: 3% auto;
+    padding: 3%;
+  }
+
+  .article .content table {
+    width: 90%;
+    padding: 1%;
+  }
+  .article .content table td,
+  .article .content table th {
+    padding: 0.5em;
+  }
+
+  .article .content pre {
+    max-width: 90%;
+    padding: 4%;
+  }
+
+  .metaData {
+    width: 100%;
+  }
+
+  .metaData .author,
+  .metaData .meta {
+    width: 90%;
+    max-height: 150px;
+    margin-bottom: 6%;
+  }
+  .metaData .copyright {
+    max-height: 60vh;
+  }
+  .metaData .author img {
+    max-height: 80px;
+  }
+}

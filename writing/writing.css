@@ -1,0 +1,222 @@
+.fields,
+.main,
+.tools {
+  width: 25%;
+  height: 95%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+.fields .field,
+.fields .textarea {
+  padding: 4%;
+  margin-bottom: 6%;
+  width: 90%;
+}
+.fields .textarea {
+  resize: none;
+  height: 30%;
+  min-height: 300px;
+}
+
+.choice {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6% 0;
+  gap: 8px;
+  align-self: center;
+}
+
+.choice .name {
+  font-size: 0.7em;
+}
+
+.main {
+  width: 30%;
+}
+
+.main .textarea {
+  resize: none;
+  height: 80%;
+  min-height: 300px;
+  padding: 4%;
+  width: 90%;
+  flex-grow: 2;
+}
+
+.main .btnContainer {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 4% 0;
+}
+.main .btnContainer .button {
+  width: 30%;
+  flex-grow: 2;
+}
+.main .btnContainer .button:first-child {
+  margin: 0 2% 0 0;
+}
+.main .btnContainer .button:last-child {
+  margin: 0 0 0 2%;
+}
+
+.uploader,
+.search {
+  height: 40%;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  padding: 4%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6%;
+}
+.uploader .images {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 90%;
+  height: 60%;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+.uploader .images .img {
+  height: 100%;
+  width: 40%;
+  margin: 2%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.uploader .images .img img {
+  max-width: 140px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+  border-radius: 14px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.uploader .images .img button {
+  width: 100%;
+  padding: 2% 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 1em;
+}
+
+.uploader .uploadBtn {
+  width: 60%;
+  margin-top: 6%;
+}
+
+.uploader .status {
+  align-self: flex-start;
+  margin: 6% 0 0 0;
+}
+
+.search {
+  height: auto;
+}
+
+.search .inputContainer {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.search .material-symbols-rounded {
+  pointer-events: all;
+}
+
+.search .inputContainer .input {
+  width: 80%;
+}
+
+.search .inputContainer .button {
+  width: 10%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding: 2%;
+}
+
+.search img {
+  max-height: 90%;
+  max-width: 90%;
+  align-self: center;
+  margin: 4% 0;
+  border-radius: 14px;
+  box-shadow: var(--text-shadow);
+}
+
+.search .credit {
+  font-size: 0.8em;
+  margin: 1%;
+}
+.search .credit a {
+  color: var(--dim-text-color);
+}
+.search .copy {
+  margin: 0 0 4% 0;
+}
+
+@media screen and (max-width: 768px) {
+  .fields,
+  .main,
+  .tools {
+    width: 95%;
+    height: auto;
+  }
+
+  .main .textarea {
+    min-height: 600px;
+    height: auto;
+  }
+
+  .main .btnContainer {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 6% 0;
+  }
+  .main .btnContainer .button {
+    width: 90%;
+    margin-bottom: 3%;
+  }
+  .main .btnContainer .button:first-child {
+    margin: 0 0 3% 0;
+  }
+  .main .btnContainer .button:last-child {
+    margin: 0 0 3% 0;
+  }
+
+  .uploader,
+  .search {
+    height: auto;
+    margin-bottom: 6%;
+  }
+
+  .uploader .images {
+    width: 95%;
+    height: 60%;
+  }
+
+  .uploader .images .img {
+    width: 60%;
+    margin: 3%;
+  }
+  .uploader .images .img button {
+    box-shadow: 0 0 8px 0.1px var(--btn-primary);
+  }
+  .uploader .uploadBtn {
+    width: 90%;
+  }
+}
