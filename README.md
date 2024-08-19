@@ -22,7 +22,7 @@ Before you start using Lamenta, please consider the following steps:
 
 3. **Pexels API Integration:**
 
-   - In `/writing/writing.js`, insert your Pexels API token on line 172. You can obtain a token by registering on [Pexels API](https://www.pexels.com/api/register/).
+   - In `/helpers/getPhotos.php`, insert your Pexels API token on line 02. You can obtain a token by registering on [Pexels API](https://www.pexels.com/api/register/).
 
 4. **MySQL Database:**
 
