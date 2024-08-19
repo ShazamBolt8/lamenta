@@ -148,9 +148,10 @@ search.addEventListener("input", (e) => {
     console.log("Sending request...");
     request(
       "GET",
-      `https://api.pexels.com/v1/search?query=${value}`,
+      `/helpers/getPhotos.php?query=${value}`,
       null,
       (data) => {
+        console.log(data);
         data = JSON.parse(data);
         let photos = data.photos;
         searchResults = [];
@@ -168,9 +169,6 @@ search.addEventListener("input", (e) => {
         }
       },
       (progress) => {},
-      {
-        Authorization: "AUTH_TOKEN_GOES_HERE",
-      },
     );
   }, 1000);
 });
