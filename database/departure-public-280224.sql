@@ -93,9 +93,9 @@ CREATE TABLE `author` (
 --
 
 INSERT INTO `author` (`author_id`, `author_name`, `author_bio`, `author_pfp`, `author_tiny_pfp`, `author_medium_pfp`, `author_password`, `author_is_mod`, `author_joined`) VALUES
-(1, 'Mr. Founder', '', 'https://i.ibb.co/T0GDH1q/3325a6f1541d.jpg', 'https://i.ibb.co/Fmr7j9y/cb63514918cf.jpg', 'https://i.ibb.co/K9Sp7t7/a35deeea9f82.jpg', 'i_forgot_what_it_used_to_be', 1, '2022-10-29 09:51:19'),
-(2, 'DJ5', '', 'https://i.ibb.co/b5mrctG/f57364042e48.png', 'https://i.ibb.co/8BRt1qB/ec3529b9b979.jpg', 'https://i.ibb.co/nQBMfHc/f1f893c52e32.jpg', 'i_forgot_what_it_used_to_be', 1, '2022-10-29 11:04:06'),
-(6, 'phanTOM', '', 'https://i.ibb.co/0Crtv2F/9e7984a84a53.png', 'https://i.ibb.co/12tZ7xk/7a732e15c26f.jpg', 'https://i.ibb.co/jb78zJx/26f76294ffdb.jpg', 'i_forgot_what_it_used_to_be', 0, '2023-06-10 20:53:30');
+(1, 'Mr. Founder', '', 'https://i.ibb.co/T0GDH1q/3325a6f1541d.jpg', 'https://i.ibb.co/Fmr7j9y/cb63514918cf.jpg', 'https://i.ibb.co/K9Sp7t7/a35deeea9f82.jpg', '$2y$10$wyvoKLXuILEhrz/uJk5hVex905m8/8IuRKclD3tgKx3tFsgTWLujC', 1, '2022-10-29 09:51:19'),
+(2, 'DJ5', '', 'https://i.ibb.co/b5mrctG/f57364042e48.png', 'https://i.ibb.co/8BRt1qB/ec3529b9b979.jpg', 'https://i.ibb.co/nQBMfHc/f1f893c52e32.jpg', '$2y$10$pv1cUFduffGAsGloiGzPzOblTVn6d6S3LX1Js7xa1w1NwWoyqJXLu', 1, '2022-10-29 11:04:06'),
+(6, 'phanTOM', '', 'https://i.ibb.co/0Crtv2F/9e7984a84a53.png', 'https://i.ibb.co/12tZ7xk/7a732e15c26f.jpg', 'https://i.ibb.co/jb78zJx/26f76294ffdb.jpg', '$2y$10$anP3UppL.mPJn/1eba.jD.jngDL6xOS126maD1ZHL7qxBjn1Qn6TK', 0, '2023-06-10 20:53:30');
 
 -- --------------------------------------------------------
 
