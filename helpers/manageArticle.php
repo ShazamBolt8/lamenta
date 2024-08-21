@@ -50,7 +50,7 @@ if ($method == "create") {
   $img = $img->compressAndUpload();
 
   $articleID = $article->createArticle($name, $img['original'], $img['tiny'], $img['medium'], $more, $isVideo, $authorIP, $copyright, $category, $authorID, $content);
-  $articleURL = $article->createURL($articleID, $name, $isVideo);
+  $articleURL = $article->createURL($articleID, $name, $isVideo, FALSE);
 
   sendToDiscord($name, "Thank you for your valuable contribution, $_SESSION[name].\n We're excited to announce that $_SESSION[name] has just written a new article! Dive into their latest work and gain fresh insights. Check out the article here: $site_address$articleURL", "$site_address" . $articleURL, $img['original'], $_SESSION['name'], $_SESSION['small_pfp']);
 

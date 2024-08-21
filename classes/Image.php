@@ -56,6 +56,7 @@ class Image
       $this->img_info[0], $this->img_info[1]
     );
     $this->destination = $_SERVER["DOCUMENT_ROOT"] . "/temp/";
+    mkdir($this->destination, 0755, true);
   }
 
 

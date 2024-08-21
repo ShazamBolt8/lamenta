@@ -246,11 +246,12 @@ class Article
     return $this->result;
   }
 
-  public function createURL($id, $name, $isTheater)
+  public function createURL($id, $name, $isTheater, $returnSlashed = TRUE)
   {
     $name = filter_var($name, FILTER_SANITIZE_URL);
     $page = $isTheater ? "theaters" : "articles";
-    return "/$page/$id/$name";
+    $url = "$page/$id/$name";
+    return $returnSlashed ? "/$url" : $url;
   }
   public function createEditURL($id, $name, $isTheater)
   {
