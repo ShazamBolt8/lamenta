@@ -1,6 +1,6 @@
 # Lamenta
 
-![Logo](assets/bitmap.png)
+![Logo](assets/drawing.svg)
 
 Lamenta is an open-source article website project that was formerly known as BlueWinds. It was discontinued and is now available for public use.
 
