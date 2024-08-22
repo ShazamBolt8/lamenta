@@ -10,7 +10,15 @@ Lamenta is designed with the mission to make knowledge accessible to everyone. I
 
 ## Getting Started
 
-Before you start using Lamenta, please consider the following steps:
+You can watch the tutorial below to get started:
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Wr4God6xUSk">
+    <img src="https://img.youtube.com/vi/Wr4God6xUSk/0.jpg" alt="Setting Up Lamenta Locally">
+  </a>
+</p>
+
+Alternatively, you can follow the step-by-step instructions below:
 
 1. **Customize Website Information:**
 
